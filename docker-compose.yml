@@ -1,0 +1,13 @@
+version: '3.3'
+services:
+  openvpn:
+    image: nginx
+    restart: always
+    cap_add:
+     - NET_ADMIN
+    ports:
+      - 1194:1194
+    volumes:
+      - ./openvpn-data:/etc/openvpn
+    command: /bin/sh -c "entrypoint.sh"
+    

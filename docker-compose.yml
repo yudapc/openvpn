@@ -1,7 +1,7 @@
 version: '3.3'
 services:
   openvpn:
-    image: nginx
+    image: kylemanna/openvpn
     restart: always
     cap_add:
      - NET_ADMIN

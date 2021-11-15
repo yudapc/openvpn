@@ -1,4 +1,4 @@
 #!/bin/bash
 
-export CLIENTNAME=userfree
+# export CLIENTNAME=userfree
 docker-compose up
